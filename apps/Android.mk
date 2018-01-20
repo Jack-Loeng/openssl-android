@@ -55,7 +55,9 @@ LOCAL_SRC_FILES:= \
 
 #   cms.c ec.c s_server.c
 
-LOCAL_SHARED_LIBRARIES := \
+LOCAL_LDLIBS += -lz
+
+LOCAL_STATIC_LIBRARIES := \
 	libssl \
 	libcrypto 
 
